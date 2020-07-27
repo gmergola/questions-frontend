@@ -1,0 +1,78 @@
+
+.HomePage-play {
+  margin-top: 50px;
+  margin-left: 300px;
+  font-size: 30px;
+}
+
+.HomePage-title {
+  -webkit-text-stroke: 2px black;
+  margin-top: 10px;
+  margin-left: 450px;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  animation-name: moveTopBottom;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.HomePage-title-container {
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 20px;
+  height: 200px;
+  padding-top: 0.5px;
+  border-radius: 100%;
+  background-color: rgb(253, 179, 42);
+}
+
+.HomePage-directions-button {
+  margin-top: 20px;
+  margin-left: 80%;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100px;
+  height: 20px;
+  background-color: rgb(252, 184, 59);
+  border: none;
+}
+
+.HomePage-directions-button:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 900px){
+  .HomePage-title-container {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .HomePage-play {
+    margin-top: 40px;
+    margin-left: 80px;
+    font-size: 20px;
+  }
+
+  .HomePage-title {
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 50px;
+  }
+
+  .HomePage-directions-button {
+    margin-top: 20px;
+    margin-left: 65%;
+  }
+}
+
+@keyframes moveTopBottom {
+  from {
+    transform: translateY(-400px);
+  }
+
+  to {
+    transform: translate(0px)
+  }
+}

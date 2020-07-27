@@ -1,0 +1,71 @@
+.GuessAnswerForm-container {
+  margin-top: 40px;
+  margin-left:250px;
+  margin-bottom: 80%;
+}
+
+.GuessedAnswerForm-X {
+  margin-left: 90px;
+  color: red;
+  font-size: 60px;
+  display: inline;
+}
+
+.GuessAnswerForm-label {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.GuessAnswerForm-input {
+  margin-left: 50px;
+  margin-right: 7px;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+}
+
+.GuessAnswerForm-button {
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  border: none;
+}
+
+.GuessAnswerForm-button:hover {
+  opacity: 0.5;
+}
+
+.GuessAnswerForm-answer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 900px){
+
+  .GuessAnswerForm-container {
+    margin-left: -120px;
+  }
+
+  .GuessedAnswerForm-X {
+    margin-left: 80px;
+    color: red;
+    font-size: 60px;
+    display: inline;
+  }
+  .GuessAnswerForm-label {
+    font-size: 20px;
+    margin-left: 140px;
+  }
+
+  .GuessAnswerForm-input {
+    margin-left: 140px;
+  }
+
+  .GuessAnswerForm-answer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+  }
+}

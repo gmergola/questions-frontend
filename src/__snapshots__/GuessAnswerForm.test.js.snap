@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="GuessAnswerForm-container"
+  >
+    <div
+      class="TeamForm-container"
+    >
+      <form>
+        <div
+          class="form-check TeamForm-team1"
+        >
+          <input
+            checked=""
+            class="form-check-input"
+            id="teamRadios1"
+            name="teamRadios"
+            type="radio"
+            value="team1"
+          />
+          <label
+            for="teamRadios1"
+          >
+            <b>
+              Team 1
+            </b>
+          </label>
+        </div>
+        <div
+          class="form-check TeamForm-team2"
+        >
+          <input
+            class="form-check-input"
+            id="teamRadios2"
+            name="teamRadios"
+            type="radio"
+            value="team2"
+          />
+          <label
+            for="teamRadios2"
+          >
+            <b>
+              Team 2
+            </b>
+          </label>
+        </div>
+        <button
+          class="TeamForm-save-button"
+        >
+          <b>
+            Save
+          </b>
+        </button>
+      </form>
+      <h5
+        class="TeamForm-team1-total"
+      >
+        Team 1 total: 0
+      </h5>
+      <h5
+        class="TeamForm-team2-total"
+      >
+        Team 2 total: 0
+      </h5>
+    </div>
+    <div
+      class="GuessAnswerForm-label"
+    >
+      <b>
+        Submit your answers here:
+      </b>
+    </div>
+    <form>
+      <input
+        class="GuessAnswerForm-input"
+        name="answer-guess"
+        value=""
+      />
+      <button
+        class="GuessAnswerForm-button"
+      >
+        <b>
+          Submit Answer
+        </b>
+      </button>
+    </form>
+    <div />
+  </div>
+</DocumentFragment>
+`;

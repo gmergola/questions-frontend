@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Directions-container"
+  >
+    <button
+      class="Directions-home-button"
+    >
+      <b>
+        Back Home
+      </b>
+    </button>
+    <div>
+      <h3>
+        A Family Feud inspired game with some changes!
+      </h3>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Select a question
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once you've selected a question decide who is team1 and who is team 2.
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once you've decided on the teams, have team1 and team 2 submit an answer. After that, the team with the highest voted answer starts!
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once the starting team has been selected, that team has three chances to guess as many correct answers as they can. If that team hits three incorrect answers, it is the other team's turn.
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Every question has 6 answers, when all 6  correct answers have been guessed, the team with the highest remaining points wins that round!
+        </span>
+      </div>
+      <h3>
+        Enjoy!
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="Directions-container"
+  >
+    <button
+      class="Directions-home-button"
+    >
+      <b>
+        Back Home
+      </b>
+    </button>
+    <div>
+      <h3>
+        A Family Feud inspired game with some changes!
+      </h3>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Select a question
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once you've selected a question decide who is team1 and who is team 2.
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once you've decided on the teams, have team1 and team 2 submit an answer. After that, the team with the highest voted answer starts!
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Once the starting team has been selected, that team has three chances to guess as many correct answers as they can. If that team hits three incorrect answers, it is the other team's turn.
+        </span>
+      </div>
+      <div
+        class="Directions-bullet-point"
+      >
+        <span
+          class="dot"
+        />
+        <span>
+          Every question has 6 answers, when all 6  correct answers have been guessed, the team with the highest remaining points wins that round!
+        </span>
+      </div>
+      <h3>
+        Enjoy!
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;

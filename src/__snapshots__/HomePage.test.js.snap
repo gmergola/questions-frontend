@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="HomePage-container"
+  >
+    <button
+      class="HomePage-directions-button"
+    >
+      <b>
+        How to play?
+      </b>
+    </button>
+    <div
+      class="HomePage-title-container"
+    >
+      <div
+        class="HomePage-play"
+      >
+        Let's play
+      </div>
+      <div
+        class="HomePage-title"
+      >
+        Questions!
+      </div>
+    </div>
+    <p>
+      loading...
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="HomePage-container"
+  >
+    <button
+      class="HomePage-directions-button"
+    >
+      <b>
+        How to play?
+      </b>
+    </button>
+    <div
+      class="HomePage-title-container"
+    >
+      <div
+        class="HomePage-play"
+      >
+        Let's play
+      </div>
+      <div
+        class="HomePage-title"
+      >
+        Questions!
+      </div>
+    </div>
+    <p>
+      loading...
+    </p>
+  </div>
+</DocumentFragment>
+`;

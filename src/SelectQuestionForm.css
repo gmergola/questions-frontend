@@ -1,0 +1,50 @@
+.Form-container {
+  margin-top: 10%;
+  margin-bottom: 100%;
+}
+
+.Question-select {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+}
+
+.SelectAnswerForm-option {
+  color: green;
+}
+
+.choose-label {
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+.choose-button {
+  margin-top: 30px;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin-left: 590px;
+}
+
+.choose-button:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 900px){
+  .Question-select {
+    width: 120px;
+  }
+
+  .choose-label {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .choose-button {
+    margin-left: 150px;
+    width: 150px;
+  }
+
+}

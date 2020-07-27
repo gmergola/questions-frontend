@@ -1,0 +1,38 @@
+.Directions-container {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 50%;
+}
+
+.Directions-home-button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  width: 150px;
+  height: 30px;
+  border: none;
+}
+
+.Directions-bullet-point {
+  margin-bottom: 40px;
+}
+
+.dot {
+  margin-right: 15px;
+  height: 10px;
+  width: 20px;
+  background-color: rgb(250, 204, 119);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.Directions-home-button:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px){
+  .Directions-container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
