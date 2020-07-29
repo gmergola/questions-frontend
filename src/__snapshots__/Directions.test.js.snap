@@ -14,7 +14,7 @@ exports[`matches snapshot 1`] = `
     </button>
     <div>
       <h3>
-        A Family Feud inspired game with some changes!
+        A Family Feud inspired game with a twist!
       </h3>
       <div
         class="Directions-bullet-point"
@@ -33,7 +33,7 @@ exports[`matches snapshot 1`] = `
           class="dot"
         />
         <span>
-          Once you've selected a question decide who is team1 and who is team 2.
+          Once you've selected a question decide who is on team1 and who is on team 2.
         </span>
       </div>
       <div
@@ -43,7 +43,7 @@ exports[`matches snapshot 1`] = `
           class="dot"
         />
         <span>
-          Once you've decided on the teams, have team1 and team 2 submit an answer. After that, the team with the highest voted answer starts!
+          Once you've decided on the teams, have team1 and team 2 each submit an answer. After that, the team with the highest voted answer starts!
         </span>
       </div>
       <div
@@ -63,7 +63,7 @@ exports[`matches snapshot 1`] = `
           class="dot"
         />
         <span>
-          Every question has 6 answers, when all 6  correct answers have been guessed, the team with the highest remaining points wins that round!
+          Every question has 6 answers, when all 6 correct answers have been guessed, the team with the highest remaining points wins that round!
         </span>
       </div>
       <h3>
@@ -88,7 +88,7 @@ exports[`matches snapshot when logged out 1`] = `
     </button>
     <div>
       <h3>
-        A Family Feud inspired game with some changes!
+        A Family Feud inspired game with a twist!
       </h3>
       <div
         class="Directions-bullet-point"
@@ -107,7 +107,7 @@ exports[`matches snapshot when logged out 1`] = `
           class="dot"
         />
         <span>
-          Once you've selected a question decide who is team1 and who is team 2.
+          Once you've selected a question decide who is on team1 and who is on team 2.
         </span>
       </div>
       <div
@@ -117,7 +117,7 @@ exports[`matches snapshot when logged out 1`] = `
           class="dot"
         />
         <span>
-          Once you've decided on the teams, have team1 and team 2 submit an answer. After that, the team with the highest voted answer starts!
+          Once you've decided on the teams, have team1 and team 2 each submit an answer. After that, the team with the highest voted answer starts!
         </span>
       </div>
       <div
@@ -137,7 +137,7 @@ exports[`matches snapshot when logged out 1`] = `
           class="dot"
         />
         <span>
-          Every question has 6 answers, when all 6  correct answers have been guessed, the team with the highest remaining points wins that round!
+          Every question has 6 answers, when all 6 correct answers have been guessed, the team with the highest remaining points wins that round!
         </span>
       </div>
       <h3>

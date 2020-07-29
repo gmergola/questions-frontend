@@ -20,7 +20,7 @@ function Question() {
   }
 
   return (
-    loading ? <p>Loading...</p> :
+    loading ? <p className="loading">Loading...</p> :
     <div>
       <button className="Question-new-button" onClick={selectANewQuestion}><b>Select A New Question</b></button>
       <div className="Question-title">{data.question}</div>

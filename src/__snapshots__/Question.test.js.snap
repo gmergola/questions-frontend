@@ -1,16 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`matches snapshot 1`] = `
+exports[`renders with mocked question matches snapshot 1`] = `
 <DocumentFragment>
-  <p>
-    Loading...
-  </p>
-</DocumentFragment>
-`;
-
-exports[`matches snapshot when logged out 1`] = `
-<DocumentFragment>
-  <p>
+  <p
+    class="loading"
+  >
     Loading...
   </p>
 </DocumentFragment>

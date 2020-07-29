@@ -64,7 +64,17 @@ exports[`matches snapshot 1`] = `
       >
         Team 2 total: 0
       </h5>
+      <div
+        class="TeamForm-team-div"
+      >
+        <b>
+          Team 1
+        </b>
+      </div>
     </div>
+    <div
+      class="x-container"
+    />
     <div
       class="GuessAnswerForm-label"
     >
