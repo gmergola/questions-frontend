@@ -11,6 +11,10 @@
   display: inline;
 }
 
+.x-container {
+  margin-left: 20px;
+}
+
 .GuessAnswerForm-label {
   font-size: 25px;
   margin-bottom: 5px;
@@ -42,14 +46,22 @@
   margin-left: 100px;
 }
 
+.switch-teams {
+  margin-left: 10px;
+}
+
 @media only screen and (max-width: 900px){
 
   .GuessAnswerForm-container {
     margin-left: -120px;
   }
 
+  .x-container {
+    margin-left: 200px;
+  }
+
   .GuessedAnswerForm-X {
-    margin-left: 80px;
+    margin-left: 30px;
     color: red;
     font-size: 60px;
     display: inline;
@@ -63,9 +75,17 @@
     margin-left: 140px;
   }
 
+  .GuessAnswerForm-button {
+    width: 80px;
+  }
+
   .GuessAnswerForm-answer {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 200px;
+  }
+
+  .switch-teams {
     margin-left: 200px;
   }
 }

@@ -29,9 +29,9 @@ function GuessAnswerForm({ data }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     showCorrectGuess();
-    if(data.answers.every((answer) => answer.answer.toLowerCase() !== guessedAnswer.toLowerCase() &&
-    !answer.options.includes(guessedAnswer.toLowerCase()) && guessedAnswer !== '')) {
-      if(incorrectXs.length < 3) {
+    if (data.answers.every((answer) => answer.answer.toLowerCase() !== guessedAnswer.toLowerCase() &&
+      !answer.options.includes(guessedAnswer.toLowerCase()) && guessedAnswer !== '')) {
+      if (incorrectXs.length < 3) {
         setIncorrectXs([...incorrectXs, 'X']);
       }
     }
@@ -44,8 +44,10 @@ function GuessAnswerForm({ data }) {
   return (
     <div className="GuessAnswerForm-container">
       <TeamForm setIncorrectXs={setIncorrectXs} currentVote={shownAnswers[shownAnswers.length - 1]?.vote} />
-      {incorrectXs.map((x, i) => <div className="GuessedAnswerForm-X" key={i}><b>{x}</b></div>)}
-      {incorrectXs.length === 3 ? <h1>Time to switch teams!</h1> : null}
+      <div className="x-container">
+        {incorrectXs.map((x, i) => <div className="GuessedAnswerForm-X" key={i}><b>{x}</b></div>)}
+      </div>
+      {incorrectXs.length === 3 ? <h1 className="switch-teams">Time to switch teams!</h1> : null}
       <div className="GuessAnswerForm-label"><b>Submit your answers here:</b></div>
       <form onSubmit={handleSubmit}>
         <input
