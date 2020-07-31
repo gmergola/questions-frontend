@@ -24,7 +24,7 @@ describe("renders with mocked question", () => {
   });
 
   it("matches snapshot", async function () {
-    const { asFragment, queryByText, debug} = renderWithRouter(<Question />);
+    const { asFragment, queryByText, debug} = renderWithRouter(<Question />, '/questions:question_main');
     await waitForElementToBeRemoved(() => queryByText('Loading...'));
     debug();
     expect(asFragment()).toMatchSnapshot();
