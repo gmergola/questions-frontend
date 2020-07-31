@@ -7,19 +7,24 @@ import TeamForm from './TeamForm';
 function GuessAnswerForm({ data }) {
   const [guessedAnswer, setGuessedAnswer] = useState('');
   const [shownAnswers, setShownAnswers] = useState([]);
+  const [noDuplicates, setNoDuplicates] = useState([]);
   const [incorrectXs, setIncorrectXs] = useState([]);
 
   /**showCorrectGuess: logic for showing an answer compared to what the user guessed */
   function showCorrectGuess() {
     for (let answer of data.answers) {
       if (answer.answer.toLowerCase() === guessedAnswer.toLowerCase() ||
-        answer.options.includes(guessedAnswer.toLowerCase())) {
-        if (!shownAnswers.includes(answer.answer)) {
+        answer.options.includes(guessedAnswer.toLowerCase()) ||
+        answer.answer.toLowerCase() === guessedAnswer.slice(0, guessedAnswer.length-1).toLowerCase() ||
+        answer.answer.toLowerCase() === guessedAnswer.slice(1)) {
+        if (!noDuplicates.includes(answer.answer)) {
+          setNoDuplicates([...noDuplicates, answer.answer]);
           setShownAnswers([...shownAnswers, { answer: answer.answer, vote: answer.vote }]);
         }
       }
     }
   }
+  console.log(shownAnswers);
 
   function handleChange(evt) {
     setGuessedAnswer(evt.target.value);
@@ -30,7 +35,9 @@ function GuessAnswerForm({ data }) {
     evt.preventDefault();
     showCorrectGuess();
     if (data.answers.every((answer) => answer.answer.toLowerCase() !== guessedAnswer.toLowerCase() &&
-      !answer.options.includes(guessedAnswer.toLowerCase()) && guessedAnswer !== '')) {
+      !answer.options.includes(guessedAnswer.toLowerCase()) && guessedAnswer !== '' &&
+      answer.answer.toLowerCase() !== guessedAnswer.slice(0, guessedAnswer.length-1).toLowerCase() &&
+      answer.answer.toLowerCase() !== guessedAnswer.slice(1))) {
       if (incorrectXs.length < 3) {
         setIncorrectXs([...incorrectXs, 'X']);
       }

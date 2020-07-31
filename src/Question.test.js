@@ -8,6 +8,14 @@ const MOCKED_QUESTION_DATA = { question: "question", answers: [{ id: 1, answer: 
 
 function setMocks() {
   apiFns.getQuestion = jest.fn().mockReturnValue(MOCKED_QUESTION_DATA);
+
+  // jest.mock('react-router-dom', () => ({
+  //   ...jest.requireActual('react-router-dom'), // use actual for all non-hook parts
+  //   useParams: () => ({
+  //     question_main: 'test'
+  //   }),
+  //   useRouteMatch: () => ({ url: '/questions/test' }),
+  // }));
 }
 
 function resetMocks() {
@@ -23,9 +31,9 @@ describe("renders with mocked question", () => {
     renderWithRouter(<Question />);
   });
 
-  it("matches snapshot", async function () {
-    const { asFragment, queryByText, debug} = renderWithRouter(<Question />, '/questions:question_main');
-    await waitForElementToBeRemoved(() => queryByText('Loading...'));
+  it("matches snapshot", function () {
+    const { asFragment, queryByText, debug} = renderWithRouter(<Question />);
+    waitForElementToBeRemoved(() => queryByText('Loading...'));
     debug();
     expect(asFragment()).toMatchSnapshot();
   });
