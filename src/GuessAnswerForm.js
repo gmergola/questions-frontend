@@ -24,7 +24,6 @@ function GuessAnswerForm({ data }) {
       }
     }
   }
-  console.log(shownAnswers);
 
   function handleChange(evt) {
     setGuessedAnswer(evt.target.value);

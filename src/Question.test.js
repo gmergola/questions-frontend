@@ -5,21 +5,16 @@ import Question from './Question';
 import * as apiFns from './apiHelpers';
 
 const MOCKED_QUESTION_DATA = { question: "question", answers: [{ id: 1, answer: 'answer', vote: 456, options: ['option'] }] };
+const MOCKED_QUESTIONS_DATA = { questions: [{ "question_main": "one", "question": "question" }]};
 
 function setMocks() {
+  apiFns.getQuestions = jest.fn().mockReturnValue(MOCKED_QUESTIONS_DATA);
   apiFns.getQuestion = jest.fn().mockReturnValue(MOCKED_QUESTION_DATA);
-
-  // jest.mock('react-router-dom', () => ({
-  //   ...jest.requireActual('react-router-dom'), // use actual for all non-hook parts
-  //   useParams: () => ({
-  //     question_main: 'test'
-  //   }),
-  //   useRouteMatch: () => ({ url: '/questions/test' }),
-  // }));
 }
 
 function resetMocks() {
   apiFns.getQuestion.mockRestore();
+  apiFns.getQuestions.mockRestore();
 }
 
 describe("renders with mocked question", () => {
@@ -31,9 +26,10 @@ describe("renders with mocked question", () => {
     renderWithRouter(<Question />);
   });
 
-  it("matches snapshot", function () {
+  it("matches snapshot", async function () {
     const { asFragment, queryByText, debug} = renderWithRouter(<Question />);
-    waitForElementToBeRemoved(() => queryByText('Loading...'));
+    //WIP TODO: fix this snap shot so it doesn't show Loading...
+    // await waitForElementToBeRemoved(() => queryByText('Loading...'));
     debug();
     expect(asFragment()).toMatchSnapshot();
   });
