@@ -54,6 +54,7 @@ function GuessAnswerForm({ data }) {
         {incorrectXs.map((x, i) => <div className="GuessedAnswerForm-X" key={i}><b>{x}</b></div>)}
       </div>
       {incorrectXs.length === 3 ? <h1 className="switch-teams">Time to switch teams!</h1> : null}
+      {shownAnswers.length === 6 && <div>All answers guessed!</div>}
       <div className="GuessAnswerForm-label"><b>Submit your answers here:</b></div>
       <form onSubmit={handleSubmit}>
         <input
