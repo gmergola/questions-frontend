@@ -20,7 +20,7 @@ function SelectQuestionForm() {
   }
 
   return (
-    loading ? <p>loading...</p> :
+    loading ? "Loading...":
       <div className="Form-container">
         <form onSubmit={handleSubmit}>
           <label className="choose-label" htmlFor="questions">Choose a Question: </label>
