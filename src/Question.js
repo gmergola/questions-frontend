@@ -5,6 +5,7 @@ import FamilyFeudApi from './apiHelpers';
 import useApi from './hooks/useApi';
 import { useHistory } from "react-router-dom";
 import './Question.css';
+import LoadingSpinner from './LoadingSpinner';
 
 /**Question: a component with a route of /questions/:question_main
  * renders the GuessAnswerForm
@@ -20,7 +21,7 @@ function Question() {
   }
 
   return (
-    loading ? <p className="loading">Loading...</p> :
+    loading ? <LoadingSpinner /> :
     <div>
       <button className="Question-new-button" onClick={selectANewQuestion}><b>Select A New Question</b></button>
       <div className="Question-title">{data.question}</div>

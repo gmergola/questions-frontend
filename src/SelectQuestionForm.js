@@ -3,6 +3,7 @@ import FamilyFeudApi from './apiHelpers';
 import useApi from './hooks/useApi';
 import { useHistory } from "react-router-dom";
 import './SelectQuestionForm.css';
+import LoadingSpinner from './LoadingSpinner';
 
 /**SelectQuestionForm: a component to allow the user to select a question to answer */
 function SelectQuestionForm() {
@@ -20,7 +21,7 @@ function SelectQuestionForm() {
   }
 
   return (
-    loading ? "Loading...":
+    loading ? <LoadingSpinner />:
       <div className="Form-container">
         <form onSubmit={handleSubmit}>
           <label className="choose-label" htmlFor="questions">Choose a Question: </label>
