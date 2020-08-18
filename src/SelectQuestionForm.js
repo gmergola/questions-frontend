@@ -21,8 +21,8 @@ function SelectQuestionForm() {
   }
 
   return (
-    loading ? <LoadingSpinner />:
       <div className="Form-container">
+        {loading ? <LoadingSpinner />:
         <form onSubmit={handleSubmit}>
           <label className="choose-label" htmlFor="questions">Choose a Question: </label>
           <select name="questions" className="Question-select" onChange={handleChange}>
@@ -35,7 +35,7 @@ function SelectQuestionForm() {
           <div>
             <button className="choose-button"><b>Choose Question</b></button>
           </div>
-        </form>
+        </form>}
       </div>
   );
 }
