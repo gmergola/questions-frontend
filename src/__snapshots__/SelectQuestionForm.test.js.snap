@@ -2,8 +2,12 @@
 
 exports[`renders sucessfully matches snapshot 1`] = `
 <DocumentFragment>
-  <p>
-    loading...
-  </p>
+  <div
+    class="Form-container"
+  >
+    <div
+      class="spinner"
+    />
+  </div>
 </DocumentFragment>
 `;

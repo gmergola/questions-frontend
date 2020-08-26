@@ -2,10 +2,24 @@
 
 exports[`renders with mocked question matches snapshot 1`] = `
 <DocumentFragment>
-  <p
-    class="loading"
-  >
-    Loading...
-  </p>
+  <div>
+    <button
+      class="Question-new-button"
+    >
+      <b>
+        Select A New Question
+      </b>
+    </button>
+    <div
+      class="Question-title"
+    />
+    <div
+      class="GuessAnswerForm-container"
+    >
+      <div
+        class="spinner"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;

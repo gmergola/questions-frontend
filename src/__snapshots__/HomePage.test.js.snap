@@ -26,9 +26,13 @@ exports[`matches snapshot 1`] = `
         Questions!
       </div>
     </div>
-    <p>
-      loading...
-    </p>
+    <div
+      class="Form-container"
+    >
+      <div
+        class="spinner"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -59,9 +63,13 @@ exports[`matches snapshot when logged out 1`] = `
         Questions!
       </div>
     </div>
-    <p>
-      loading...
-    </p>
+    <div
+      class="Form-container"
+    >
+      <div
+        class="spinner"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
